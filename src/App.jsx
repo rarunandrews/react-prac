@@ -44,7 +44,6 @@ function App() {
 
   useEffect(() => {
     return () => {
-      // Clean up the audio element
       clickAudio.pause();
       clickAudio.currentTime = 0;
     };
@@ -54,7 +53,7 @@ function App() {
     <div className='container'>
       <form action=''>
         <div className='title'>
-          <h1>Scientific Calculator</h1>
+          {/* <h1>Scientific Calculator</h1> */}
         </div>
         <div className='result'>
           <input className="result_box" type='text' value={result} readOnly />
